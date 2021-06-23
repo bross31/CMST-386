@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <header>
+    <meta charset="utf-8">
+    <title>CMST 386 - Brad Ross</title>
+    <meta name="description" content="Landing page for all of Brad's projects in CMST386.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="project1/css/project1.css" rel="stylesheet"/>
+    <h1>Project Directory</h1>
+    <h2>Brad's Projects:</h2>
+  </header>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Project1</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="project1/project1.html">Project 1</a>
+        <a href="project1/gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <ul>
+        <li><a href="project1/project1.html">Project 1</a></li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+        <li>Project 4</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Owner and Operator Brad Ross, 2021
+  </footer>
+
+</html>
