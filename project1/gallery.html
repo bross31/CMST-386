@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <meta name="description" content="Gallery of pictures from around the world.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <header>
+    <h1>Sights of the World</h1>
+    <link href="css/project1.css" rel="stylesheet"/>
+  </header>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+
+  <nav>
+    <a href="file:///C:/Users/19417/Desktop/UMGC/Summer/cmst386/index.html">Home</a>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Project1</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="project1.html">Project 1</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <br>
+    <section>
+      <figure>
+        <h3>A Blissful Canyon</h3>
+        <a href="imgs/canyon1.jpg">
+        <img class="images" src="imgs/canyon.jpg" alt="Blissful Canyon"></a>
+        <figcaption>Click on the image to take a trip through the blissful canyon like a hawk in the sky.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <figure>
+        <h3>Tropical Oasis</h3>
+        <a href="imgs/tropics1.jpg">
+        <img class="images" src="imgs/tropics.jpg" alt="Tropical Oasis"></a>
+        <figcaption>Click on the image to to sit back and relax on a beach in this tropical oasis.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <figure>
+        <h3>Winter Nights</h3>
+        <a href="imgs/midnight1.jpg">
+        <img class="images" src="imgs/midnight.jpg" alt="Winter Nights"></a>
+        <figcaption>Click on the image to snuggle up next to a fire with a mug of hot coco in this snowy winter night.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <figure>
+        <h3>The Rolling Grassland</h3>
+        <a href="imgs/grassland1.jpg">
+        <img class="images" src="imgs/grassland.jpg" alt="The Rolling Grassland"></a>
+        <figcaption>Click on the image to let your inner child run free through the rolling grasslands to the beautiful mountains in the horizon.</figcaption>
+      </figure>
+    </section>
+    <br>
+  </main>
+
+  <footer>
+    Owner and Operator Brad Ross, 2021
+  </footer>
+
+</html>
